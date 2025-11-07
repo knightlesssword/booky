@@ -1,4 +1,4 @@
-# 📚 My Book Library
+# 📚 Booky - A personal book review and management system in your browser
 
 A modern, responsive web application for tracking your book collection, reading progress, and reviews. Built with vanilla JavaScript, featuring IndexedDB for persistent storage, JSON export/import functionality, and beautiful toast notifications.
 
@@ -46,10 +46,6 @@ A modern, responsive web application for tracking your book collection, reading 
 2. **Open** `index.html` in your web browser
 3. **Start** adding books to your library!
 
-```bash
-# No installation required - just open in browser
-# The app works completely offline
-```
 
 ## 📋 Usage Guide
 
@@ -211,7 +207,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Font Awesome**: Beautiful icons used throughout the application
 - **Google Fonts**: Typography for enhanced readability
 - **Web Standards**: Using modern web APIs like IndexedDB and File API
-- **Open Source Community**: Inspiration and best practices from countless developers
 
 ## 🐛 Troubleshooting
 
@@ -237,15 +232,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Clear browser storage if needed
 - Consider smaller batch imports
 
-## 📞 Support
-
-For support, questions, or feature requests:
-- **GitHub Issues**: Report bugs or request features
-- **Pull Requests**: Contribute improvements and fixes
-- **Code Review**: Review and feedback on your contributions
 
 ---
 
-**Happy Reading! 📖✨**
+**Happy Reading and Reviewing! 📖✨**
 
-*Built with ❤️ using modern web technologies*
+*Built with ❤️ by knightlesssword*
+
