@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Progress Tracker & Review Writer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Booky</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="action-buttons">
+                <button id="add-book-btn" class="btn-primary">Add New Book</button>
+                <button id="export-btn" class="btn-secondary">Export as JSON</button>
+                <label for="import-file" class="btn-secondary import-label">Import from JSON</label>
+                <input type="file" id="import-file" accept=".json" style="display: none;">
+            </div>
+
+            <div id="books-grid">
+                <!-- Books will be displayed here as cards -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for adding/editing books -->
+    <div id="book-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Add New Book</h2>
+            <form id="book-form">
+                <div class="form-group">
+                    <label for="book-name">Book Name *</label>
+                    <input type="text" id="book-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="book-review">Review</label>
+                    <textarea id="book-review" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Rating</label>
+                    <div class="rating-stars" id="rating-stars">
+                        <i class="far fa-star" data-rating="1"></i>
+                        <i class="far fa-star" data-rating="2"></i>
+                        <i class="far fa-star" data-rating="3"></i>
+                        <i class="far fa-star" data-rating="4"></i>
+                        <i class="far fa-star" data-rating="5"></i>
+                    </div>
+                    <input type="hidden" id="book-rating" value="0">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bookmark-page">Bookmark Page</label>
+                        <input type="number" id="bookmark-page" min="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="bookmark-line">Line Number</label>
+                        <input type="number" id="bookmark-line" min="1">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="book-status">Status</label>
+                    <select id="book-status">
+                        <option value="yet-to-start">Yet to Start</option>
+                        <option value="ongoing">Ongoing</option>
+                        <option value="completed">Completed</option>
+                        <option value="dropped">Dropped</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Save Book</button>
+                    <button type="button" id="cancel-btn" class="btn-secondary">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
